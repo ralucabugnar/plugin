@@ -1,0 +1,70 @@
+.slideshow-plugin{
+	width: 720px;
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+}
+.slideshow-plugin.vertical{
+	height: 300px;
+	position: relative;
+}
+.slideshow-plugin:not(.vertical) .slides {
+	display: block;
+	width: 6000px;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.slideshow-plugin .slides {
+	padding: 0;
+	margin: 0;
+}
+.slideshow-plugin .slide, .slideshow-plugin .slide img {
+	width: 720px;
+	height: 300px;
+	float: left;
+	list-style: none;
+}
+.slideshow-plugin .pager span{
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: gray;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+	
+}
+.slideshow-plugin .pager span.active{
+	color: red;
+}
+.slideshow-plugin.vertical .pager {
+	position: absolute;
+	top: 275px;
+	left: 50px;
+	z-index: 1000;
+}
+
+.slideshow-plugin:not(.vertical) .pager{
+	position: absolute;
+    top: 275px;
+    left: 300px;
+}
+.extended-slideshow-plugin {
+	width: 1440px;
+	height: 350px;
+	overflow: hidden;
+}
+.extended-slideshow-plugin.vertical {
+	width: 300px;
+    height: 1100px;
+    overflow: hidden;
+}
+.extended-slideshow-plugin .slideshow-plugin {
+	float: left;
+}
+.extended-slideshow-plugin .prev, .extended-slideshow-plugin .next {
+	width: 360px;
+    height: 300px;
+    float: left;
+}
